@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Name - Data Visualization Portfolio</title>
+    <meta name="description"
+        content="Data Science & Visualization Portfolio - Creating insights through beautiful, interactive data visualizations">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap"
+        rel="stylesheet">
+
+    <!-- Styles -->
+    <link rel="stylesheet" href="styles.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">Your Name</a>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <a href="#home" class="nav-link">Home</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#blog" class="nav-link">Blog</a>
+                <a href="#contact" class="nav-link">Contact</a>
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    Creating <span class="highlight">insights</span> through
+                    <span class="highlight">beautiful data</span>
+                </h1>
+                <p class="hero-description">
+                    I'm a data scientist and visualization specialist who transforms complex datasets
+                    into compelling visual stories. I work with Python, JavaScript, and modern
+                    visualization libraries to create interactive dashboards and analytical tools.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-chart-bar"></i>
+                        View Projects
+                    </a>
+                    <a href="#about" class="btn btn-secondary">
+                        <i class="fas fa-user"></i>
+                        About Me
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="floating-card">
+                    <div class="chart-preview">
+                        <div class="chart-bars">
+                            <div class="bar" style="height: 60%"></div>
+                            <div class="bar" style="height: 80%"></div>
+                            <div class="bar" style="height: 45%"></div>
+                            <div class="bar" style="height: 90%"></div>
+                            <div class="bar" style="height: 70%"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Gallery -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2>Featured Projects</h2>
+                <p>Interactive data visualizations and analytical dashboards</p>
+            </div>
+
+            <!-- Project Filter -->
+            <div class="project-filters">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="python">Python</button>
+                <button class="filter-btn" data-filter="streamlit">Streamlit</button>
+                <button class="filter-btn" data-filter="d3">D3.js</button>
+                <button class="filter-btn" data-filter="ml">Machine Learning</button>
+            </div>
+
+            <div class="projects-grid">
+                <!-- Project 1 -->
+                <div class="project-card" data-category="python streamlit">
+                    <div class="project-image">
+                        <img src="assets/thumbnails/project1-thumb.jpg" alt="COVID-19 Dashboard" loading="lazy">
+                        <div class="project-overlay">
+                            <button class="btn-expand" data-project="project1">
+                                <i class="fas fa-expand"></i>
+                                View Interactive
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>COVID-19 Analytics Dashboard</h3>
+                        <p>Real-time pandemic data visualization with interactive maps, trend analysis, and predictive
+                            modeling using Python and Streamlit.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">Streamlit</span>
+                            <span class="tag">Plotly</span>
+                            <span class="tag">Pandas</span>
+                        </div>
+                        <div class="project-stats">
+                            <span><i class="fas fa-eye"></i> 2.5k views</span>
+                            <span><i class="fas fa-star"></i> 45 stars</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="project-card" data-category="python ml streamlit">
+                    <div class="project-image">
+                        <img src="assets/thumbnails/project2-thumb.jpg" alt="Stock Market Predictor" loading="lazy">
+                        <div class="project-overlay">
+                            <button class="btn-expand" data-project="project2">
+                                <i class="fas fa-expand"></i>
+                                View Interactive
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Stock Market Prediction Tool</h3>
+                        <p>Machine learning-powered stock analysis with LSTM models, technical indicators, and risk
+                            assessment visualizations.</p>
+                        <div class="project-tags">
+                            <span class="tag">Python</span>
+                            <span class="tag">TensorFlow</span>
+                            <span class="tag">Streamlit</span>
+                            <span class="tag">LSTM</span>
+                        </div>
+                        <div class="project-stats">
+                            <span><i class="fas fa-eye"></i> 1.8k views</span>
+                            <span><i class="fas fa-star"></i> 32 stars</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="project-card" data-category="d3 python">
+                    <div class="project-image">
+                        <img src="assets/thumbnails/project3-thumb.jpg" alt="Climate Change Visualization"
+                            loading="lazy">
+                        <div class="project-overlay">
+                            <button class="btn-expand" data-project="project3">
+                                <i class="fas fa-expand"></i>
+                                View Interactive
+                            </button>
+                        </div>
+                    </div>
+                    <div class="project-content">
+                        <h3>Climate Change Data Explorer</h3>
+                        <p>Interactive exploration of global temperature trends, CO2 levels, and climate indicators with
+                            animated time series and geographical visualizations.</p>
+                        <div class="project-tags">
+                            <span class="tag">D3.js</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Observable</span>
+                            <span class="tag">GeoJSON</span>
+                        </div>
+                        <div class="project-stats">
+                            <span><i class="fas fa-eye"></i> 3.2k views</span>
+                            <span class="fas fa-star"></i> 58 stars</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="project-modal" id="project-modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="modal-title">Project Title</h3>
+                <button class="modal-close" id="modal-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="iframe-container">
+                    <iframe id="project-iframe" src="" frameborder="0" loading="lazy"></iframe>
+                </div>
+                <div class="project-details">
+                    <p id="modal-description">Project description</p>
+                    <div class="project-links">
+                        <a href="#" class="btn btn-outline" id="view-code">
+                            <i class="fab fa-github"></i>
+                            View Code
+                        </a>
+                        <a href="#" class="btn btn-outline" id="live-demo">
+                            <i class="fas fa-external-link-alt"></i>
+                            Live Demo
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2>About Me</h2>
+                <p>Passionate about turning data into actionable insights</p>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text">
+                    <h3>Hi, I'm [Your Name]</h3>
+                    <p>
+                        I'm a data scientist and visualization specialist with over 5 years of experience
+                        transforming complex datasets into compelling visual stories. I believe that the
+                        best insights come from the intersection of solid statistical analysis and
+                        beautiful, intuitive design.
+                    </p>
+                    <p>
+                        My work spans across various domains including healthcare analytics, financial
+                        modeling, and environmental data science. I'm particularly passionate about
+                        creating interactive dashboards that empower stakeholders to explore data
+                        and discover insights on their own.
+                    </p>
+
+                    <div class="timeline">
+                        <div class="timeline-item">
+                            <div class="timeline-year">2023</div>
+                            <div class="timeline-content">
+                                <h4>Senior Data Scientist</h4>
+                                <p>Leading visualization projects at TechCorp, focusing on ML interpretability</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2021</div>
+                            <div class="timeline-content">
+                                <h4>Data Visualization Specialist</h4>
+                                <p>Developed interactive dashboards for healthcare analytics at MedData Inc</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="timeline-year">2019</div>
+                            <div class="timeline-content">
+                                <h4>Junior Data Analyst</h4>
+                                <p>Started my journey in data science at StartupXYZ</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="skills-section">
+                    <h3>Skills & Tools</h3>
+                    <div class="skills-grid">
+                        <div class="skill-category">
+                            <h4><i class="fas fa-code"></i> Programming</h4>
+                            <div class="skill-items">
+                                <span class="skill-item">Python</span>
+                                <span class="skill-item">JavaScript</span>
+                                <span class="skill-item">R</span>
+                                <span class="skill-item">SQL</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4><i class="fas fa-chart-line"></i> Visualization</h4>
+                            <div class="skill-items">
+                                <span class="skill-item">D3.js</span>
+                                <span class="skill-item">Plotly</span>
+                                <span class="skill-item">Streamlit</span>
+                                <span class="skill-item">Tableau</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4><i class="fas fa-brain"></i> Machine Learning</h4>
+                            <div class="skill-items">
+                                <span class="skill-item">Scikit-learn</span>
+                                <span class="skill-item">TensorFlow</span>
+                                <span class="skill-item">PyTorch</span>
+                                <span class="skill-item">XGBoost</span>
+                            </div>
+                        </div>
+                        <div class="skill-category">
+                            <h4><i class="fas fa-database"></i> Data & Cloud</h4>
+                            <div class="skill-items">
+                                <span class="skill-item">Pandas</span>
+                                <span class="skill-item">PostgreSQL</span>
+                                <span class="skill-item">AWS</span>
+                                <span class="skill-item">Docker</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <div class="section-header">
+                <h2>Latest Articles</h2>
+                <p>Insights on data visualization, design principles, and lessons learned</p>
+            </div>
+
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="assets/blog/article1-thumb.jpg" alt="Design Principles" loading="lazy">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">March 15, 2024</span>
+                            <span class="blog-category">Design</span>
+                        </div>
+                        <h3><a href="blog/design-principles.html">5 Essential Principles for Effective Data
+                                Visualization</a></h3>
+                        <p>Exploring the fundamental design principles that make data visualizations both beautiful and
+                            functional...</p>
+                        <a href="blog/design-principles.html" class="read-more">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="assets/blog/article2-thumb.jpg" alt="Streamlit Tips" loading="lazy">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">February 28, 2024</span>
+                            <span class="blog-category">Tutorial</span>
+                        </div>
+                        <h3><a href="blog/streamlit-optimization.html">Optimizing Streamlit Apps for Better
+                                Performance</a></h3>
+                        <p>Learn advanced techniques to make your Streamlit applications faster and more responsive...
+                        </p>
+                        <a href="blog/streamlit-optimization.html" class="read-more">Read More →</a>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image">
+                        <img src="assets/blog/article3-thumb.jpg" alt="Color in Data Viz" loading="lazy">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">January 12, 2024</span>
+                            <span class="blog-category">Design</span>
+                        </div>
+                        <h3><a href="blog/color-theory.html">The Psychology of Color in Data Visualization</a></h3>
+                        <p>Understanding how color choices affect perception and interpretation of data
+                            visualizations...</p>
+                        <a href="blog/color-theory.html" class="read-more">Read More →</a>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2>Let's Connect</h2>
+                <p>Always open to discussing new projects and opportunities</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Get in Touch</h3>
+                    <p>
+                        I'm always interested in hearing about new projects, collaborations,
+                        or opportunities to help solve complex data challenges. Feel free to reach out!
+                    </p>
+
+                    <div class="contact-methods">
+                        <a href="mailto:your.email@example.com" class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>your.email@example.com</span>
+                        </a>
+                        <a href="https://linkedin.com/in/yourprofile" class="contact-method" target="_blank">
+                            <i class="fab fa-linkedin"></i>
+                            <span>LinkedIn Profile</span>
+                        </a>
+                        <a href="https://github.com/yourusername" class="contact-method" target="_blank">
+                            <i class="fab fa-github"></i>
+                            <span>GitHub Portfolio</span>
+                        </a>
+                        <a href="https://twitter.com/yourusername" class="contact-method" target="_blank">
+                            <i class="fab fa-twitter"></i>
+                            <span>@yourusername</span>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="contact-form">
+                    <form id="contact-form">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>Your Name</h3>
+                    <p>Data Scientist & Visualization Specialist</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#about">About</a>
+                    <a href="#blog">Blog</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/yourusername" target="_blank" aria-label="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://linkedin.com/in/yourprofile" target="_blank" aria-label="LinkedIn">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                    <a href="https://twitter.com/yourusername" target="_blank" aria-label="Twitter">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Your Name. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="main.js"></script>
+</body>
+
+</html>
