@@ -14,11 +14,11 @@ const contactForm = document.getElementById('contact-form');
 // Project data for modal
 const projectData = {
   project1: {
-    title: 'COVID-19 Analytics Dashboard',
-    description: 'A comprehensive real-time pandemic data visualization dashboard built with Python and Streamlit. Features interactive maps showing infection rates by region, trend analysis with predictive modeling, and detailed statistics with drill-down capabilities. The dashboard processes data from multiple sources including WHO, CDC, and Johns Hopkins University to provide accurate, up-to-date insights.',
-    iframeSrc: 'https://your-streamlit-app1.streamlit.app/', // Replace with actual URL
-    codeUrl: 'https://github.com/yourusername/covid-dashboard',
-    demoUrl: 'https://your-streamlit-app1.streamlit.app/'
+    title: 'Uber Rides Analytics Dashboard',
+    description: 'An interactive data visualization dashboard analyzing Uber ride patterns and trends. Features comprehensive data exploration with interactive maps, time-series analysis, and statistical insights into ride distribution, peak hours, and geographical patterns. Built with Python, Streamlit, and advanced data visualization libraries to provide actionable insights from transportation data.',
+    iframeSrc: 'https://21407alfredmunga-uber-streamlit-uber-dashboard-wd4zxx.streamlit.app/',
+    codeUrl: 'https://github.com/21407alfredmunga/uber-streamlit',
+    demoUrl: 'https://21407alfredmunga-uber-streamlit-uber-dashboard-wd4zxx.streamlit.app/'
   },
   project2: {
     title: 'Stock Market Prediction Tool',
